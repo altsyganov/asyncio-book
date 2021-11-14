@@ -1,0 +1,42 @@
+DEBUG:perf:kek
+INFO:sanic.root:Goin' Fast @ http://0.0.0.0:8000
+INFO:sanic.root:Starting worker [26769]
+INFO:perf:Got DB event:
+{
+    "table": "patron",
+    "id": 10,
+    "type": "INSERT",
+    "data": {
+        "id": 10,
+        "name": "kerpn",
+        "fav_dish": "SPAM Bruschetta"
+    }
+}
+WARNING:perf: Elapsed: 8.06 ms
+INFO:sanic.access:
+INFO:sanic.access:
+INFO:perf:Got DB event:
+{
+    "table": "patron",
+    "id": 10,
+    "type": "UPDATE",
+    "data": {
+        "old": {
+            "id": 10,
+            "name": "kerpn",
+            "fav_dish": "SPAM Bruschetta"
+        },
+        "new": {
+            "id": 10,
+            "name": "kerpn",
+            "fav_dish": "kek Bruschetta"
+        },
+        "diff": {
+            "fav_dish": "kek Bruschetta"
+        }
+    }
+}
+WARNING:perf:put Elapsed: 6.53 ms
+INFO:sanic.access:
+INFO:sanic.root:Stopping worker [26769]
+INFO:sanic.root:Server Stopped
